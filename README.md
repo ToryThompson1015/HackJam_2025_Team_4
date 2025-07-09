@@ -1,46 +1,51 @@
-# # 🚀 HackJam 2025 – Team 04
+# 🚀 HackJam 2025 – Team 04
 
 Welcome to your team's official HackJam 2025 project repository! This is where you'll plan, build, and deliver your alumni engagement platform prototype.
 
 ---
 
-## 📌 Challenge Overview
+# Business Case
 
-Your mission is to create a solution that enhances alumni engagement at Per Scholas through a platform that supports community, mentorship, and professional development.
+Per Scholas would like to strengthen alumni engagement and motivation by creating a **gamified platform** to track and incentivize alumni achievements. This platform should encourage Per Scholas graduates to:
 
-Your solution must include:
-- A working prototype, mockup, or demo
-- A technical overview explaining how the platform supports alumni engagement
-- A roadmap for future development
-  
-## 🎯 Key Focus Areas
+- Improve their skills  
+- Act as mentors  
+- Support new learners  
 
-1️⃣ **Achievement Tracking & Gamification**  
-- Earn XP, badges, and levels for milestones like certifications, mentorship, and community involvement  
-- Leaderboards and dashboards to showcase contributions and growth  
-- Smart challenges and opportunities based on alumni behavior  
+The platform should also reward career milestones, mentorship achievements, and learning goals.
 
-2️⃣ **Mentorship & Peer Learning**  
-- Mentor/mentee matching based on skills, career goals, and interests  
-- Collaboration tools for shared learning and tracking mentorship impact  
+> 💡 **Bonus:** We encourage all teams to integrate or plan some form of **AI feature**. AI is a hot topic and is likely to grow in relevance in the future.
 
-3️⃣ **Personalized Skill Development & Career Growth**  
-- Recommend courses, certifications, and learning paths  
-- Track job placements, promotions, and upskilling  
-- Enable peer learning circles  
+---
 
-4️⃣ **Community Engagement & Collaboration**  
-- Create and join discussion groups  
-- Track events, workshops, and networking  
-- Real-time notifications and tailored engagement suggestions  
+# Solution Objectives
 
-5️⃣ **Scalability & Sustainability**  
-- Modular architecture for future growth  
-- Balanced design for performance, cost, and user experience  
-- Seamless integration with existing Per Scholas systems and learning tools  
+The objective of this event is to have team members **collaborate, design, and develop** a solution that creates a gamified platform to track Per Scholas post-graduate achievements and acknowledge alumni contributions to the network.
 
+### Your solution should include:
 
-You are highly encouraged to also integrate at least **one AI feature** (details below).
+- ✅ Fun and user-friendly with an innovative design  
+- ✅ A platform for alumni to register and log in  
+- ✅ Tracking of alumni achievements in:
+  - **Professional milestones**: interviews, internships, jobs, certifications  
+  - **Community engagement**: mentorships, peer learning groups, social events  
+- ✅ Gamification elements:
+  - Leaderboards  
+  - Badges  
+  - Experience Levels  
+  - Unique Titles  
+  - Other creative ideas  
+
+> 🎯 **Bonus Objective:** AI Integration
+
+---
+
+# Deliverables
+
+- 📦 A clear **mockup**, **prototype**, or **presentation** showcasing your team’s solution  
+- 📝 A brief explanation of how the solution aligns with **Per Scholas’ mission and values**  
+- 🛣️ *Optional:* A roadmap for future development and deployment  
+
 
 ---
 
@@ -59,8 +64,6 @@ The preferred stack includes:
 ---
 
 ## 🤖 AI Integration (Optional)
-
-Choose at least **one** of the following AI features to implement:
 
 - ✅ Smart Mentorship Matching  
 - ✅ Personalized Learning Recommendations  
@@ -85,13 +88,13 @@ Choose at least **one** of the following AI features to implement:
 
 ## 📣 Communication
 
-All team communication and announcements will happen via our [HackJam Discord](https://discord.gg/SWy2sRR6).
+All team communication and announcements will happen via our [HackJam Discord](https://discord.gg/GCjP5zWy).
 
 Suggested channels:
 - `#general-announcements` – All-team updates
 - `#team-xx-room` – Your private team space
 - `#help-desk` – Ask questions and get support
-
+A
 
 ---
 
