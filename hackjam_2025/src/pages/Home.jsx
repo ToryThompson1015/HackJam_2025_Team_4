@@ -1,9 +1,9 @@
 'use client';
 
 import { useNavigate } from "react-router-dom";
-import Logo from "../images/logo.png"; // Adjust the path as necessary
+import Logo from "../images/logo.png"; 
 
-export default function HomePage() {
+export default function Home() {
     const navigate = useNavigate();
 
     const handleLogin = () => {
