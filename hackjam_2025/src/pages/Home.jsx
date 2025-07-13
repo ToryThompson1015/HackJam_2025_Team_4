@@ -49,7 +49,7 @@ export default function Home() {
             {/* Buttons */}
             <div style={{ display: "flex", gap: 16 }}>
                 <button
-                    // onClick={handleLogin}
+                    onClick={handleLogin}
                     style={{
                         padding: "12px 32px",
                         fontSize: "1rem",
@@ -63,7 +63,7 @@ export default function Home() {
                     Log In
                 </button>
                 <button
-                    // onClick={handleSignUp}
+                    onClick={handleSignUp}
                     style={{
                         padding: "12px 32px",
                         fontSize: "1rem",

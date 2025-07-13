@@ -3,7 +3,8 @@ import Home from './pages/Home';
 import About from './pages/about';
 import Contact from './pages/contact';
 import NoPage from './pages/NoPage';
-import Login from './pages/Login';
+import LoginSignup from './pages/LoginSignup';
+
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginSignup />} />
         <Route path="*" element={<NoPage />} />
 
         </Routes>
