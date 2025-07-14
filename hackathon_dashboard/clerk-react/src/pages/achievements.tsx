@@ -45,7 +45,7 @@ const AchievementsPage: React.FC = () => (
                         boxShadow: "0 2px 8px rgba(0,0,0,0.05)",
                     }}
                 >
-                    <h2 style={{ margin: 0, fontSize: "1.2rem" }}>{ach.title}</h2>
+                    <h2 style={{ margin: 0, fontSize: "1.2rem", color: 'black' }}>{ach.title}</h2>
                     <p style={{ margin: "0.5rem 0 0 0", color: "#555" }}>{ach.description}</p>
                 </li>
             ))}
