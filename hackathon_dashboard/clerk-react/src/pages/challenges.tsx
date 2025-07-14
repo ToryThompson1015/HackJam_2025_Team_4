@@ -52,8 +52,8 @@ const ChallengesPage: React.FC = () => {
                             background: "#fafbfc",
                         }}
                     >
-                        <h2 style={{ margin: 0 }}>{challenge.title}</h2>
-                        <p style={{ margin: "0.5rem 0 1rem 0" }}>{challenge.description}</p>
+                        <h2 style={{ margin: 0, color: 'black' }}>{challenge.title}</h2>
+                        <p style={{ margin: "0.5rem 0 1rem 0", color: 'black' }}>{challenge.description}</p>
                         <div>
                             {challenge.tags.map((tag) => (
                                 <span
