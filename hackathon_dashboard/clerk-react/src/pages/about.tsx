@@ -1,13 +1,5 @@
-import React from "react";
-
-
-const sidebarItems = [
-    { icon: "🏠", label: "Home", onClick: () => window.location.href = "/" },
-    { icon: "📚", label: "Courses", onClick: () => window.location.href = "/courses" },
-    { icon: "⭐", label: "Achievements", onClick: () => window.location.href = "/achievements" },
-    { icon: "👤", label: "Profile", onClick: () => window.location.href = "/profile" },
-    { icon: "⚙️", label: "Settings", onClick: () => window.location.href = "/settings" },
-];
+import SideBar from "../components/sidebar";
+import { useNavigate } from "react-router-dom";
 
 const user = {
     name: "Jane Doe",
@@ -17,51 +9,11 @@ const user = {
 };
 
 export default function About() {
+    const navigate = useNavigate();
     return (
-        <div style={{ display: "flex", minHeight: "100vh", background: "#f7f7fb" }}>
+        <div style={{ display: "flex", minHeight: "100vh", minWidth: '100vw', background: "#f7f7fb" }}>
             {/* Sidebar */}
-            <aside
-                style={{
-                    width: 80,
-                    background: "#fff",
-                    borderRight: "1px solid #ececec",
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    padding: "24px 0",
-                }}
-            >
-                <img
-                    src={user.avatar}
-                    alt="avatar"
-                    style={{
-                        width: 48,
-                        height: 48,
-                        borderRadius: "50%",
-                        marginBottom: 32,
-                        border: "2px solid #58cc02",
-                    }}
-                />
-                {sidebarItems.map((item) => (
-                    <div
-                        key={item.label}
-                        style={{
-                            display: "flex",
-                            flexDirection: "column",
-                            alignItems: "center",
-                            margin: "24px 0",
-                            cursor: "pointer",
-                            color: "#555",
-                            fontSize: 24,
-                        }}
-                        title={item.label}
-                    >
-                        <span>{item.icon}</span>
-                        <span style={{ fontSize: 10, marginTop: 4 }}>{item.label}</span>
-                    </div>
-                ))}
-            </aside>
-
+            <SideBar />
             {/* Main Content */}
             <main style={{ flex: 1, padding: "40px 60px" }}>
                 {/* Header */}
@@ -74,10 +26,10 @@ export default function About() {
                     }}
                 >
                     <div>
-                        <h1 style={{ margin: 0, fontWeight: 700, fontSize: 32 }}>
+                        <h1 style={{ margin: 0, fontWeight: 700, fontSize: 32, color: "black" }}>
                             Welcome back, {user.name.split(" ")[0]}!
                         </h1>
-                        <p style={{ color: "#888", marginTop: 8 }}>
+                        <p style={{ color: "black", marginTop: 8 }}>
                             Keep up your streak and earn more XP!
                         </p>
                     </div>
@@ -92,6 +44,7 @@ export default function About() {
                                 alignItems: "center",
                                 gap: 8,
                                 fontWeight: 600,
+                                color:"black"
                             }}
                         >
                             🔥 {user.streak} day streak
@@ -106,6 +59,7 @@ export default function About() {
                                 alignItems: "center",
                                 gap: 8,
                                 fontWeight: 600,
+                                color:"black"
                             }}
                         >
                             🏆 {user.xp} XP
@@ -123,6 +77,7 @@ export default function About() {
                 >
                     <div
                         style={{
+                            color:"black",
                             background: "#fff",
                             borderRadius: 16,
                             padding: 32,
@@ -132,17 +87,17 @@ export default function About() {
                             alignItems: "flex-start",
                         }}
                     >
-                        <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>
+                        <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color:"black"}}>
                             Continue Learning
                         </h2>
-                        <p style={{ color: "#888", margin: "12px 0 0" }}>
+                        <p style={{ color: "black", margin: "12px 0 0" }}>
                             Resume your last lesson and keep your streak alive!
                         </p>
-                        <button
+                        <button onClick={() => navigate("/challenges")}
                             style={{
                                 marginTop: 20,
                                 background: "#58cc02",
-                                color: "#fff",
+                                color: "color",
                                 border: "none",
                                 borderRadius: 8,
                                 padding: "10px 24px",
@@ -163,12 +118,13 @@ export default function About() {
                             display: "flex",
                             flexDirection: "column",
                             alignItems: "flex-start",
+                            color:"black"
                         }}
                     >
-                        <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>
+                        <h2 style={{ color:"black", margin: 0, fontSize: 20, fontWeight: 700 }}>
                             Achievements
                         </h2>
-                        <p style={{ color: "#888", margin: "12px 0 0" }}>
+                        <p style={{ color: "black", margin: "12px 0 0" }}>
                             Unlock badges and track your progress.
                         </p>
                         <div style={{ marginTop: 20, display: "flex", gap: 12 }}>
@@ -188,13 +144,14 @@ export default function About() {
                             alignItems: "flex-start",
                         }}
                     >
-                        <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700 }}>
+                        <h2 style={{ margin: 0, fontSize: 20, fontWeight: 700, color:"black"}}>
                             Leaderboard
                         </h2>
-                        <p style={{ color: "#888", margin: "12px 0 0" }}>
+                        <p style={{ color: "black", margin: "12px 0 0" }}>
                             Compete with friends and climb the ranks!
                         </p>
                         <button
+                            onClick={()=> navigate("/leaderboard")}
                             style={{
                                 marginTop: 20,
                                 background: "#fff",
