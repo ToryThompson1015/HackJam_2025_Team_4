@@ -15,7 +15,7 @@ export default function Board(){
                 <button onClick={handleClick} data-id='0'>All Time</button>
 
                 </div>
-                <Profiles></Profiles>
+                
                 </div>
     )
 }
