@@ -1,19 +1,30 @@
-import React from 'react';
+import samplePhoto from '../images/circle-photo.jpg'
 
-export default function profiles() {
+export default function Profiles() {
     return (
         <div  id='profile'>
-            
+            <div className='flex'>
+                <div className='item' style={{ display: "flex", alignItems: "center" }}>
+                    <div className="profile-photo" style={{ borderRadius: "50%", marginLeft: "5%" }}>
+                        <img src={samplePhoto} alt="sample-photo" style={{ minHeight: "25vh", minWidth: "25vw" }} />
+                    </div>
+                    <div className='profile-info'>
+                        <div className='profile-info-name'>
+                            <h3>
+                                Jane Doe
+                            </h3>
+                        </div>
+                        <div>
+                           <br /> 
+                        </div>
+                        <div className='profile-info-body'>
+                            <p>
+                                Jane is a software engineer with a passion for building scalable web applications. She loves coding, coffee, and cats.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
         </div>
-    );
-}
-
-function Item(){
-    return (
-        <div className='flex'>
-            <div className='item'>
-                <img src="https://www.google.com/search?q=circle+profile+picture&sca_esv=11274236dac20e0c&sxsrf=AE3TifN3rwaAWNtqBFj4IbnSRdrbfKh-fw%3A1752460012137&ei=7Gp0aPKTCNqZwbkPhNTWoAQ&ved=0ahUKEwjyuYakpruOAxXaTDABHQSqFUQQ4dUDCBA&uact=5&oq=circle+profile+picture&gs_lp=Egxnd3Mtd2l6LXNlcnAiFmNpcmNsZSBwcm9maWxlIHBpY3R1cmUyCxAAGIAEGJECGIoFMgsQABiABBiRAhiKBTIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgYQABgHGB5Ilh9QowdYjR1wAXgBkAEAmAGGAqABiAyqAQUxLjEuNbgBA8gBAPgBAZgCCKACvwzCAgoQABiwAxjWBBhHwgINEAAYgAQYsAMYQxiKBcICBxAjGLECGCfCAgcQIxiwAhgnwgIHEAAYgAQYDZgDAIgGAZAGCpIHBTIuMS41oAewOLIHBTEuMS41uAe8DMIHBTAuMS43yAcv&sclient=gws-wiz-serp#vhid=kZCxbc6SxBordM&vssid=__Gp0aIjaD-CMwbkP2Z6UGA_43" alt="" />
-            </div>
-            </div>
     );
 }
